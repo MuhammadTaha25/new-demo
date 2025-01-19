@@ -2,7 +2,6 @@ import os
 from langchain.chat_models import ChatOpenAI
 import streamlit as st
 from langchain_community.document_loaders import WebBaseLoader
-from langchain_pinecone import PineconeVectorStore
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain_huggingface import HuggingFaceEmbeddings
 from langchain_qdrant import QdrantVectorStore
@@ -11,7 +10,6 @@ from langchain_core.output_parsers import StrOutputParser
 from langchain_google_genai import GoogleGenerativeAI
 from operator import itemgetter
 from dotenv import load_dotenv
-import bs4 
 from bs4 import SoupStrainer
 load_dotenv()
 
